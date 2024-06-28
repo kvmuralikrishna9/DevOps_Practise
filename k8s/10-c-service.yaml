@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-10-c-service
+  labels:
+    name: svc-10-c-service
+spec:
+  ports:
+    - port: 86
+      targetPort: 86
+  selector:
+     env: dev-env
+  type: ClusterIP

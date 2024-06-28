@@ -26,7 +26,7 @@ metadata:
   name: 10-c-deployment
   annotations:
     describe: last updatei
-    kubernetes.io/change-cause: Initial Release-v1.0
+    kubernetes.io/change-cause: Initial Release-v3.0
 
   labels:
     env: dev-env
@@ -47,7 +47,9 @@ spec:
     spec:
       containers:
         - name: 10-c-deployment
-          image: centos
+          image: nginx
+          ports:
+            - containerPort: 85
           command: ["/bin/bash", "-c", "while true ; do echo 10-c-deployment ; sleep 10 ; done"]
           resources:
             limits:
@@ -55,4 +57,3 @@ spec:
               cpu: "100m"
       nodeSelector:
        ec2type: t2.medium
-
