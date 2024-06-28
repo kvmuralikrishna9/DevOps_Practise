@@ -50,7 +50,7 @@ pipeline {
             steps {
                 script{
                     dir('terraform/7_EKS_deploy-from-Jenkins/a_s3_dynamo-db'){ 
-                        sh 'terraform apply --auto-approve'    //parameterized
+                        sh 'terraform $action --auto-approve'    //parameterized
                     }   
                 }
             }
