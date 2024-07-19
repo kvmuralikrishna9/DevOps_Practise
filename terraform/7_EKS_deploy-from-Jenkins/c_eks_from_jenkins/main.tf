@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "ap-south-1"
-}
-
 # Calling VPC
 module "VPC" {
   source                      = "./modules/VPC"
