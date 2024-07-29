@@ -1,11 +1,11 @@
 #!/bin/bash
 
-person1=$Swarna
-person2=Himanish
+PERSON1=Swarna
+PERSON2=$PERSON2
 
-echo "hello world, this is the conversaton between Himanish and $person1.
+echo "hello world, this is the conversaton between $PERSON2 and $PERSON1.
 
-'$person1: Hello Himanish,'
-'Hianish: Hello $person1'
-'$person1: How r u himanish'
-'Himanish: Fine mom.'"
+'$PERSON1: Hello $PERSON2,'
+'Hianish: Hello $PERSON1'
+'$PERSON1: How r u $PERSON2'
+'$PERSON2: Fine mom.'"
